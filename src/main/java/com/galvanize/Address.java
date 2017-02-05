@@ -1,10 +1,6 @@
 package com.galvanize;
 
 public class Address {
-  private String street;
-  private String city;
-  private String state;
-  private String zip;
 
   public Address (String street, String city, String state, String zip){
     this.street = street;
@@ -13,8 +9,7 @@ public class Address {
     this.zip = zip;
   }
 
-  @Override
-  public String toString(){
+  @Override public String toString(){
     return String.format("%s, %s, %s %s", getStreet(), getCity(), getState(), getZip());
   }
 
@@ -43,5 +38,11 @@ public class Address {
   public void setZip(String newZip){
     this.zip = newZip;
   }
+
+  private String street;
+  private String city;
+  private String state;
+  private String zip;
+
 
 }
